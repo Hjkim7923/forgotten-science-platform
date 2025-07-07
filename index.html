@@ -1,115 +1,73 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>잊힌 과학 발견 플랫폼</title>
-  <style>
-    /* 전체 리셋 & 기본 설정 */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
-      color: #333;
-    }
-    /* 히어로 섹션 */
-    header.hero {
-      height: 100vh;
-      background-image: url('https://source.unsplash.com/1600x900/?science,lab');
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      display: flex;
-      align-items: center; justify-content: center;
-      text-align: center;
-      color: #fff;
-    }
-    header.hero::after {
-      content: '';
-      position: absolute; top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.5);
-    }
-    header.hero .inner {
-      position: relative;
-      max-width: 800px; padding: 0 1rem;
-    }
-    header.hero h1 {
-      font-size: 3rem; margin-bottom: 0.5rem;
-    }
-    header.hero p {
-      font-size: 1.2rem; margin-bottom: 1.5rem;
-    }
-    header.hero .btn {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.75rem 1.5rem;
-      background: #ff7043;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 4px;
-      transition: background 0.3s;
-    }
-    header.hero .btn:hover {
-      background: #f4511e;
-    }
-    /* 네비게이션 */
-    nav.main-nav {
-      background: #fff;
-      border-bottom: 1px solid #eee;
-      position: sticky; top: 0; z-index: 10;
-    }
-    nav.main-nav ul {
-      display: flex; justify-content: center; flex-wrap: wrap;
-      list-style: none;
-    }
-    nav.main-nav li { margin: 0.5rem 1rem; }
-    nav.main-nav a {
-      color: #555; text-decoration: none; font-weight: 500;
-    }
-    nav.main-nav a:hover { color: #ff7043; }
-    /* 콘텐츠 섹션 */
-    main {
-      max-width: 900px; margin: auto; padding: 2rem 1rem;
-    }
-    section { margin-bottom: 3rem; }
-    section h2 {
-      font-size: 1.8rem; margin-bottom: 1rem;
-      border-left: 4px solid #ff7043; padding-left: 0.5rem;
-    }
-    section ul { list-style: disc inside; }
-    section ul li { margin: 0.5rem 0; }
-    /* 푸터 */
-    footer {
-      text-align: center; padding: 1.5rem 0;
-      border-top: 1px solid #eee; color: #777;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-  <header class="hero">
-    <div class="inner">
-      <h1>잊힌 과학 발견, 다시 빛나다</h1>
-      <p>실패와 거절된 가설도 우리의 지식 지도를 완성하는 중요한 퍼즐입니다.</p>
-      <a href="#forgotten" class="btn">잊힌 연구 둘러보기</a>
-      <a href="#funding" class="btn">연구비 모집 제안</a>
-    </div>
-  </header>
-  <nav class="main-nav">
-    <ul>
-      <li><a href="#forgotten">잊힌 발견</a></li>
-      <li><a href="#revalidated">재검증된 연구</a></li>
-      <li><a href="#failure-cases">실패 사례 분석</a></li>
-      <li><a href="#collaboration">공동 검증 요청</a></li>
-      <li><a href="#idea">아이디어 브레인스토밍</a></li>
-      <li><a href="#resources">자료실 &amp; 도구</a></li>
-      <li><a href="#guide">커뮤니티 가이드</a></li>
-      <li><a href="#funding">펀딩 &amp; 지원</a></li>
-    </ul>
-  </nav>
-  <main>
-    <!-- 기존에 작성하신 섹션 HTML을 여기에 그대로 유지하세요 -->
-  </main>
-  <footer>
-    &copy; 2025 잊힌 과학 발견 플랫폼
+<section id="forgotten">
+  <h2>잊힌 발견</h2>
+  <ul>
+    <li>논문·특허 아카이브</li>
+    <li>요약 및 해설</li>
+    <li>역사적 발굴 타임라인</li>
+  </ul>
+</section>
+
+<section id="revalidated">
+  <h2>재검증된 연구</h2>
+  <ul>
+    <li>재평가 과정 타임라인</li>
+    <li>오리지널 vs 재검증 비교</li>
+    <li>재현 성공 사례</li>
+  </ul>
+</section>
+
+<section id="failure-cases">
+  <h2>실패 사례 분석</h2>
+  <ul>
+    <li>설계·방법론 오류</li>
+    <li>기술적·장비적 한계</li>
+    <li>사회·정치적·문화적 방해 요인</li>
+  </ul>
+</section>
+
+<section id="collaboration">
+  <h2>공동 검증 요청</h2>
+  <ul>
+    <li>실험 프로토콜 공유</li>
+    <li>데이터셋·코드 저장소</li>
+    <li>진행 현황 대시보드</li>
+    <li><strong>펀딩 제안 (Funding Proposals)</strong></li>
+  </ul>
+</section>
+
+<section id="idea">
+  <h2>아이디어 브레인스토밍</h2>
+  <ul>
+    <li>새로운 가설 제안</li>
+    <li>피드백 게시판</li>
+    <li>투표·우선순위 결정</li>
+  </ul>
+</section>
+
+<section id="resources">
+  <h2>자료실 &amp; 도구 모음</h2>
+  <ul>
+    <li>논문·데이터베이스 링크</li>
+    <li>오픈소스 분석·시각화 툴</li>
+    <li>실험 가이드·템플릿</li>
+  </ul>
+</section>
+
+<section id="guide">
+  <h2>커뮤니티 가이드</h2>
+  <ul>
+    <li>첫 기여자 가이드</li>
+    <li>과학적 글쓰기·검증 절차 안내</li>
+    <li>FAQ 및 운영 방침</li>
+  </ul>
+</section>
+
+<section id="funding">
+  <h2>펀딩 &amp; 지원</h2>
+  <ul>
+    <li>연구비 모집 중인 제안</li>
+    <li>후원자 인센티브·리워드 안내</li>
+    <li>후원자·지원 내역 리스트</li>
+  </ul>
+</section>
+
